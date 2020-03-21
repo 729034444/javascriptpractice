@@ -12,5 +12,10 @@ A genius is the person who repeats the most times.
 
 **所以，我创建了一个javascriptpractice训练仓库，用一些小项目专门练习javascript基本功。**
 
+<font color=#F08080>说明：每个小项目的思路介绍都在各项目文件内的README文件中。</font>
+
+
+### tasklist
+#### tasklist是一个利用localStorage可本地化存储的任务清单。
 
 
