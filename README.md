@@ -19,3 +19,9 @@ A genius is the person who repeats the most times.
 #### tasklist是一个利用localStorage可本地化存储的任务清单。
 
 
+### waveshow
+#### waveshow是一个利用js实现的css波动特效。可以简单的联系for和forEach循环。
+
+
+
+
