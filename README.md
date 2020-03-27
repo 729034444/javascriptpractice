@@ -23,5 +23,9 @@ A genius is the person who repeats the most times.
 #### waveshow是一个利用js实现的css波动特效。可以简单的联系for和forEach循环。
 
 
+### clock
+#### 利用css和js写了一个动态时钟表盘。用到了伪类、transform。
+
+
 
 
