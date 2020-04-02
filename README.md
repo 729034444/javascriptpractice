@@ -28,4 +28,5 @@ A genius is the person who repeats the most times.
 
 
 
-
+### kobe
+#### 响应式自适应各个尺寸显示的静态网站。
