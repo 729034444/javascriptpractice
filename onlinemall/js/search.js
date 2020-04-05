@@ -4,15 +4,18 @@
     var $search = $('.search'),
         $input = $search.find('.search-inputbox'),
         $btn = $search.find('.search-btn'),
-        $layer = $search.find('.search-layer')
-    
-    // 验证
-    $btn.on('click',function(){
+        $layer = $search.find('.search-layer'),
+        $form = $search.find('.search-form')
 
+    // 验证
+    
+    $form.on('submit',function(){
         if($.trim($input.val()) === ""){
             return false
         }
     })
+
+
 
     // 自动完成
     $input.on('input',function(){
@@ -47,4 +50,20 @@
             console.log('always');
         })
     })
+    // 事件代理：给父元素绑定事件。利用冒泡，来监听子组件事件。
+    $layer.on('click','.search-layer-item',function(){
+        $input.val($(this).html());
+        $form.submit();
+    })
+
+    // 显示和隐藏下拉层
+    $input.on('focus',function(){
+        $layer.show();
+    }).on('click',function(){
+        return false;
+    });
+    $(document).on('click',function(){
+        $layer.hide();
+    })
+
 })(jQuery)
